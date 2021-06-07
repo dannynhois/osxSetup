@@ -44,7 +44,7 @@ brew 'youtube-dl'
 
 # Apps
 cask '1password'
-cask '1password-cli'
+cask 'brave-browser'
 cask 'firefox'
 cask 'google-backup-and-sync'
 cask 'google-chrome'
@@ -77,4 +77,5 @@ mas 'Fantastical', id: 975937182
 mas 'Microsoft RDP', id: 1295203466
 mas 'Moom', id: 419330170
 
+cask '1password-cli' # move to end because of prompt
 cask 'microsoft-office' # move to end because of prompt
