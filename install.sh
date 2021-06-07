@@ -19,28 +19,33 @@ brew update
 brew tap homebrew/bundle
 brew bundle
 
-# Set default MySQL root password and auth type
-mysql -u root -e "ALTER USER root@localhost IDENTIFIED WITH mysql_native_password BY 'password'; FLUSH PRIVILEGES;"
+# Set git config
+echo "Git config"
+git config --global user.name "Danny Nhoisaykham"
+git config --global user.email dannynhois@gmail.com
 
-# Install PHP extensions with PECL
-pecl install imagick memcached redis swoole
+# # Set default MySQL root password and auth type
+# mysql -u root -e "ALTER USER root@localhost IDENTIFIED WITH mysql_native_password BY 'password'; FLUSH PRIVILEGES;"
 
-# Install global Composer packages
-/usr/local/bin/composer global require laravel/installer laravel/valet beyondcode/expose
+# # Install PHP extensions with PECL
+# pecl install imagick memcached redis swoole
 
-# Install Laravel Valet
-$HOME/.composer/vendor/bin/valet install
+# # Install global Composer packages
+# /usr/local/bin/composer global require laravel/installer laravel/valet beyondcode/expose
 
-# Create a Sites directory
-mkdir $HOME/Sites
+# # Install Laravel Valet
+# $HOME/.composer/vendor/bin/valet install
 
-# Create sites subdirectories
-mkdir $HOME/Sites/blade-ui-kit
-mkdir $HOME/Sites/eventsauce
-mkdir $HOME/Sites/laravel
+# # Create a Sites directory
+# mkdir $HOME/Sites
+
+# # Create sites subdirectories
+# mkdir $HOME/Sites/blade-ui-kit
+# mkdir $HOME/Sites/eventsauce
+# mkdir $HOME/Sites/laravel
 
 # Clone Github repositories
-./clone.sh
+# ./clone.sh
 
 # Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
 rm -rf $HOME/.zshrc
