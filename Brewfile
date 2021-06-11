@@ -60,7 +60,7 @@ cask 'tunnelbear'
 cask 'visual-studio-code'
 cask 'vlc'
 cask 'zoom'
-
+cask 'boostnote'
 
 # Quicklook
 cask 'qlmarkdown'
