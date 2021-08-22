@@ -14,6 +14,7 @@ brew 'mackup'
 brew 'mas' # Mac App Store manager
 brew 'nvm'
 brew 'pkg-config' # https://github.com/driesvints/dotfiles/issues/20
+brew 'rclone'
 brew 'svn'
 brew 'trash' # Manage the Trash bin
 brew 'tree' # List directories in a tree structure
@@ -61,6 +62,7 @@ cask 'visual-studio-code'
 cask 'vlc'
 cask 'zoom'
 cask 'boost-note'
+cask 'postman'
 
 # Quicklook
 cask 'qlmarkdown'
